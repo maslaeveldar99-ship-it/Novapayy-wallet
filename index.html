@@ -17,7 +17,6 @@
             --accent-red: #eb5757;
             --border-color: #30363d;
             --font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            --card-skin-bg: linear-gradient(135deg, #0052D4, #4364F7, #6FB1FC);
         }
 
         * {
@@ -38,39 +37,13 @@
             overflow: hidden;
         }
         
-        .skin-classic { 
-            background: linear-gradient(135deg, #0052D4, #4364F7, #6FB1FC); 
-        }
-        
-        .skin-amex-black { 
-            background-image: url('blacknvp.jpg'); 
-            background-size: cover; background-position: center; 
-        }
-
-        .skin-amex-floral { 
-            background-image: url('flovnvp.jpg'); 
-            background-size: cover; background-position: center; 
-        }
-
-        .skin-amex-silver { 
-            background-image: url('graynvp.jpg'); 
-            background-size: cover; background-position: center; 
-        }
-
-        .skin-onyx { 
-            background-image: url('onvp.jpg'); 
-            background-size: cover; background-position: center; 
-        }
-
-        .skin-lv-blue { 
-            background-image: url('oceanvp.jpg'); 
-            background-size: cover; background-position: center; 
-        }
-
-        .skin-red-edition { 
-            background-image: url('rednvp.jpg'); 
-            background-size: cover; background-position: center; 
-        }
+        .skin-classic { background: linear-gradient(135deg, #0052D4, #4364F7, #6FB1FC); }
+        .skin-amex-black { background-image: url('blacknvp.jpg'); background-size: cover; background-position: center; }
+        .skin-amex-floral { background-image: url('flovnvp.jpg'); background-size: cover; background-position: center; }
+        .skin-amex-silver { background-image: url('graynvp.jpg'); background-size: cover; background-position: center; }
+        .skin-onyx { background-image: url('onvp.jpg'); background-size: cover; background-position: center; }
+        .skin-lv-blue { background-image: url('oceanvp.jpg'); background-size: cover; background-position: center; }
+        .skin-red-edition { background-image: url('rednvp.jpg'); background-size: cover; background-position: center; }
 
         .auth-overlay {
             position: fixed;
@@ -122,11 +95,11 @@
             cursor: pointer;
             transition: transform 0.1s, opacity 0.2s;
         }
-        .btn-primary:active { transform: scale(0.98); opacity: 0.9; }.pin-dots { display: flex; justify-content: center; gap: 12px; margin: 20px 0; }
-        .pin-dot { width: 14px; height: 14px; border-radius: 50%; border: 2px solid var(--text-sub); }
-        .pin-dot.filled { background: var(--accent-blue); border-color: var(--accent-blue); }
+        .btn-primary:active { transform: scale(0.98); opacity: 0.9; }
 
-        .pin-pad { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; width: 100%; margin-top: 10px; }
+        .pin-dots { display: flex; justify-content: center; gap: 12px; margin: 20px 0; }
+        .pin-dot { width: 14px; height: 14px; border-radius: 50%; border: 2px solid var(--text-sub); }
+        .pin-dot.filled { background: var(--accent-blue); border-color: var(--accent-blue); }.pin-pad { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; width: 100%; margin-top: 10px; }
         .pin-btn {
             background: var(--card-bg);
             border: 1px solid var(--border-color);
@@ -181,9 +154,7 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
-        .crypto-card-container {
-            margin-bottom: 14px;
-        }
+        .crypto-card-container { margin-bottom: 14px; }
 
         .crypto-card {
             color: #ffffff;
@@ -229,12 +200,13 @@
             gap: 4px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.2);
         }
-        .balance-title-sub { font-size: 13px; color: var(--text-sub);}
+        .balance-title-sub { font-size: 13px; color: var(--text-sub); }
         .balance-amount-big { font-size: 30px; font-weight: 800; letter-spacing: -0.5px; }
 
         .quick-actions { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 24px; }
         .action-btn {
-            background: var(--card-bg);border: 1px solid var(--border-color);
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
             border-radius: 14px;
             padding: 12px 6px;
             display: flex;
@@ -246,9 +218,7 @@
             font-size: 11px;
             font-weight: 500;
         }
-        .action-btn i { font-size: 18px; color: var(--accent-blue); }
-
-        .section-title { font-size: 16px; font-weight: 700; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center; }
+        .action-btn i { font-size: 18px; color: var(--accent-blue); }.section-title { font-size: 16px; font-weight: 700; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center; }
         .asset-list { display: flex; flex-direction: column; gap: 10px; }
         .asset-item {
             background: var(--card-bg);
@@ -266,9 +236,6 @@
         .asset-sub { font-size: 12px; color: var(--text-sub); }
         .asset-values { text-align: right; }
         .asset-price { font-weight: 600; font-size: 14px; }
-        .asset-change { font-size: 12px; font-weight: 500; }
-        .up { color: var(--accent-green); }
-        .down { color: var(--accent-red); }
 
         .category-chips { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 8px; margin-bottom: 14px; }
         .chip {
@@ -302,7 +269,7 @@
             padding: 10px;
             gap: 4px;
         }
-        .tv-bar { flex: 1; background: var(--accent-green); border-radius: 2px 2px 0 0; transition: height 0.3s; }
+        .tv-bar { flex: 1; background: var(--accent-green); border-radius: 2px 2px 0 0; }
 
         .heatmap-grid { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 65px; gap: 6px; margin-bottom: 20px; }
         .heatmap-cell { border-radius: 10px; padding: 8px; display: flex; flex-direction: column; justify-content: space-between; color: #fff; font-weight: 700; font-size: 12px; }
@@ -311,10 +278,10 @@
         .income-hero { background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 20px; padding: 24px; text-align: center; margin-bottom: 20px; }
         .income-hero i { font-size: 54px; color: #f2c94c; margin-bottom: 10px; }
         .realtime-yield { font-size: 28px; font-weight: 800; color: var(--accent-green); margin: 6px 0; }
-        .staking-cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }.staking-item { background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 14px; padding: 14px; position: relative; overflow: hidden; }
+        .staking-cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+        .staking-item { background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 14px; padding: 14px; position: relative; overflow: hidden; }
         .staking-badge { position: absolute; top: 0; right: 0; background: var(--accent-blue); color: #fff; font-size: 9px; font-weight: 800; padding: 3px 8px; border-bottom-left-radius: 8px; }
 
-        .p2p-order-card { background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 14px; padding: 14px; margin-bottom: 10px; }
         .chat-box {
             height: 220px;
             background: var(--bg-color);
@@ -322,8 +289,7 @@
             border-radius: 12px;
             padding: 12px;
             overflow-y: auto;
-            display: flex;
-            flex-direction: column;
+            display: flex;flex-direction: column;
             gap: 8px;
             margin-bottom: 12px;
         }
@@ -385,15 +351,16 @@
 </head>
 <body>
 
-    <!-- ЭКРАН АВТОРИЗАЦИИ -->
     <div id="authOverlay" class="auth-overlay">
         <div id="authStep1" class="auth-card">
             <div class="auth-title">Добро пожаловать в Novapay</div>
-            <div class="auth-desc">Введите имя и фамилию для создания кошелька без верификации.</div>
+            <div class="auth-desc">Введите имя и фамилию для создания кошелька.</div>
             <input type="text" id="regFirstName" class="form-input" placeholder="Имя (Эльдар)">
             <input type="text" id="regLastName" class="form-input" placeholder="Фамилия">
             <button class="btn-primary" onclick="goToStep2()">Создать кошелёк</button>
-        </div><div id="authStep2" class="auth-card" style="display: none;">
+        </div>
+
+        <div id="authStep2" class="auth-card" style="display: none;">
             <div class="auth-title">Безопасность (PIN)</div>
             <div class="auth-desc">Придумайте 5-значный PIN-код</div>
             <div class="pin-dots" id="pinDots">
@@ -401,8 +368,7 @@
             </div>
             <div class="pin-pad">
                 <button class="pin-btn" onclick="pressPin(1)">1</button><button class="pin-btn" onclick="pressPin(2)">2</button><button class="pin-btn" onclick="pressPin(3)">3</button>
-                <button class="pin-btn" onclick="pressPin(4)">4</button><button class="pin-btn" onclick="pressPin(5)">5</button><button class="pin-btn" onclick="pressPin(6)">6</button>
-                <button class="pin-btn" onclick="pressPin(7)">7</button><button class="pin-btn" onclick="pressPin(8)">8</button><button class="pin-btn" onclick="pressPin(9)">9</button>
+                <button class="pin-btn" onclick="pressPin(4)">4</button><button class="pin-btn" onclick="pressPin(5)">5</button><button class="pin-btn" onclick="pressPin(6)">6</button><button class="pin-btn" onclick="pressPin(7)">7</button><button class="pin-btn" onclick="pressPin(8)">8</button><button class="pin-btn" onclick="pressPin(9)">9</button>
                 <button class="pin-btn" onclick="simulateBiometric()"><i class="fa-solid fa-fingerprint"></i></button>
                 <button class="pin-btn" onclick="pressPin(0)">0</button>
                 <button class="pin-btn" onclick="clearPin()"><i class="fa-solid fa-delete-left"></i></button>
@@ -411,7 +377,7 @@
 
         <div id="authStep3" class="auth-card" style="display: none;">
             <div class="auth-title">Секретная фраза</div>
-            <div class="auth-desc">Запишите эти 12 слов для полного контроля над средствами.</div>
+            <div class="auth-desc">Запишите эти 12 слов.</div>
             <div class="seed-grid" id="seedDisplay"></div>
             <button class="btn-primary" onclick="goToStep4()">Я записал фразу</button>
         </div>
@@ -426,7 +392,6 @@
         </div>
     </div>
 
-    <!-- ХЕДЕР -->
     <div class="app-header">
         <div style="display: flex; align-items: center; gap: 8px;">
             <i class="fa-solid fa-shield-halved" style="color: var(--accent-blue);"></i>
@@ -438,9 +403,7 @@
         </div>
     </div>
 
-    <!-- ОСНОВНОЙ КОНТЕНТ -->
     <div class="main-content">
-        <!-- 1. КОШЕЛЁК -->
         <div id="tab1" class="tab-pane active">
             <div class="crypto-card-container">
                 <div class="crypto-card skin-classic" id="mainCardSkin">
@@ -458,7 +421,8 @@
             </div>
 
             <div class="quick-actions">
-                <div class="action-btn" onclick="openModal('modalDeposit')"><i class="fa-solid fa-circle-plus"></i><span>Пополнить</span></div><div class="action-btn" onclick="openModal('modalSend')"><i class="fa-solid fa-paper-plane"></i><span>Отправить</span></div>
+                <div class="action-btn" onclick="openModal('modalDeposit')"><i class="fa-solid fa-circle-plus"></i><span>Пополнить</span></div>
+                <div class="action-btn" onclick="openModal('modalSend')"><i class="fa-solid fa-paper-plane"></i><span>Отправить</span></div>
                 <div class="action-btn" onclick="openModal('modalWithdraw')"><i class="fa-solid fa-arrow-up-right-from-square"></i><span>Вывести</span></div>
                 <div class="action-btn" onclick="openModal('modalExchange')"><i class="fa-solid fa-right-left"></i><span>Обменять</span></div>
             </div>
@@ -470,18 +434,15 @@
             <div class="asset-list" id="assetList"></div>
         </div>
 
-        <!-- 2. ТОРГОВЛЯ -->
         <div id="tab2" class="tab-pane">
             <div class="category-chips">
                 <div class="chip active">Крипто</div>
                 <div class="chip">Акции</div>
                 <div class="chip">Фонды</div>
                 <div class="chip">Фьючерсы</div>
-            </div>
-
-            <div class="tradingview-container">
+            </div><div class="tradingview-container">
                 <div class="tv-header">
-                    <span>BTC / USDT (TradingView)</span>
+                    <span>BTC / USDT</span>
                     <span style="color: var(--accent-green); font-size: 13px;" id="tvLivePrice">$77,464.70</span>
                 </div>
                 <div class="tv-chart-box" id="tvChartBars"></div>
@@ -495,7 +456,6 @@
             <div class="heatmap-grid" id="heatmapGrid"></div>
         </div>
 
-        <!-- 3. ДОХОД -->
         <div id="tab3" class="tab-pane">
             <div class="income-hero">
                 <i class="fa-solid fa-sack-dollar"></i>
@@ -511,20 +471,19 @@
             </div>
         </div>
 
-        <!-- 4. P2P РЫНОК -->
         <div id="tab4" class="tab-pane">
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
-                <div class="section-title" style="margin:0;">P2P Рынок (Bybit P2P)</div>
+                <div class="section-title" style="margin:0;">P2P Рынок</div>
                 <button class="btn-primary" style="width: auto; padding: 8px 14px; font-size: 12px;" onclick="openModal('modalCreateP2P')">+ Свое объявление</button>
             </div>
             <div id="p2pOrdersContainer"></div>
         </div>
 
-        <!-- 5. СДЕЛКИ P2P --><div id="tab5" class="tab-pane">
-            <div class="section-title">Активная сделка #9412 (Escrow)</div>
+        <div id="tab5" class="tab-pane">
+            <div class="section-title">Активная сделка #9412</div>
             <div style="background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 14px; padding: 12px; margin-bottom: 12px; font-size: 13px;">
                 <div>Покупка: <b>100USDT</b> у продавца <b>CryptoKing</b></div>
-                <div style="color: var(--accent-blue); margin-top: 4px;">Статус: Криптовалюта заморожена в Escrow</div>
+                <div style="color: var(--accent-blue); margin-top: 4px;">Статус: Заморожено в Escrow</div>
             </div>
 
             <div class="chat-box" id="p2pChatBox">
@@ -537,20 +496,17 @@
             </div>
 
             <div style="display: flex; flex-direction: column; gap: 8px;">
-                <button class="btn-primary" style="background: var(--accent-green);" onclick="alert('Деньги получены, USDT зачислены!')">Деньги пришли (Получить USDT)</button>
-                <button class="btn-primary" style="background: var(--accent-red);" onclick="openModal('modalReport')">Подать жалобу / Скам</button>
+                <button class="btn-primary" style="background: var(--accent-green);" onclick="alert('Деньги получены, USDT зачислены!')">Деньги пришли</button>
+                <button class="btn-primary" style="background: var(--accent-red);" onclick="openModal('modalReport')">Подать жалобу</button>
             </div>
-        </div>
-
-        <!-- 6. НАСТРОЙКИ (ДИЗАЙНЫ КАРТ) -->
-        <div id="tab6" class="tab-pane">
+        </div><div id="tab6" class="tab-pane">
             <div class="section-title">Внешний вид карты Novapay</div>
             <div class="settings-group" id="cardSkinsListContainer"></div>
 
             <div class="section-title">Партнерка & Поддержка</div>
             <div class="settings-group">
                 <div class="settings-row" onclick="copyRefLink()">
-                    <span>Реферальные ссылки и Партнерка</span>
+                    <span>Реферальные ссылки</span>
                     <i class="fa-solid fa-copy"></i>
                 </div>
                 <div class="settings-row" onclick="openSupportChat()">
@@ -560,40 +516,29 @@
             </div>
         </div>
 
-        <!-- 7. ПАНЕЛЬ АДМИНИСТРАТОРА -->
         <div id="tab7" class="tab-pane">
-            <div class="section-title" style="color: var(--accent-blue);">Раздел 7 • Панель Админа (Владелец)</div>
-            
+            <div class="section-title" style="color: var(--accent-blue);">Панель Админа</div>
             <div class="income-hero" style="text-align: left; margin-bottom: 14px;">
-                <div style="font-size: 12px; color: var(--text-sub);">Собрано комиссий (Пополнения 0.5% + Переводы 1.0%)</div>
+                <div style="font-size: 12px; color: var(--text-sub);">Собрано комиссий</div>
                 <div style="font-size: 24px; font-weight: 800; color: var(--accent-green);" id="adminCommissionTotal">$482.50</div>
             </div>
-
-            <div class="section-title">Выдача и управление дизайном карт</div>
+            <div class="section-title">Управление дизайном карт</div>
             <div id="adminSkinManagerContainer" style="display: flex; flex-direction: column; gap: 8px; margin-bottom: 20px;"></div>
-            
-            <div class="section-title">Список пользователей</div>
-            <div id="adminUsersList" style="display: flex; flex-direction: column; gap: 8px; margin-bottom: 20px;"></div>
-
-            <div class="section-title" style="color: var(--accent-red);">Поступившие жалобы</div>
-            <div id="adminReportsContainer"></div>
         </div>
     </div>
 
-    <!-- НИЖНЯЯ НАВИГАЦИЯ -->
     <div class="bottom-nav">
         <div class="nav-item active" onclick="switchTab(1)"><i class="fa-solid fa-wallet"></i><span>Кошелёк</span></div>
         <div class="nav-item" onclick="switchTab(2)"><i class="fa-solid fa-chart-line"></i><span>Торговля</span></div>
-        <div class="nav-item" onclick="switchTab(3)"><i class="fa-solid fa-sack-dollar"></i><span>Доход</span></div><div class="nav-item" onclick="switchTab(4)"><i class="fa-solid fa-right-left"></i><span>P2P</span></div>
+        <div class="nav-item" onclick="switchTab(3)"><i class="fa-solid fa-sack-dollar"></i><span>Доход</span></div>
+        <div class="nav-item" onclick="switchTab(4)"><i class="fa-solid fa-right-left"></i><span>P2P</span></div>
         <div class="nav-item" onclick="switchTab(5)"><i class="fa-solid fa-comments"></i><span>Сделки</span></div>
         <div class="nav-item" onclick="switchTab(6)"><i class="fa-solid fa-gear"></i><span>Настройки</span></div>
     </div>
 
-    <!-- МОДАЛЬНЫЕ ОКНА -->
     <div class="modal-backdrop" id="modalDeposit">
         <div class="modal-window">
             <div class="section-title">Пополнить баланс</div>
-            <div style="font-size: 12px; color:var(--text-sub); margin-bottom: 10px;">Комиссия 0.5% поступает администратору</div>
             <input type="number" id="depositInputVal" class="form-input" placeholder="Сумма в $">
             <button class="btn-primary" onclick="executeDeposit()">Пополнить</button>
             <button class="btn-primary" style="background: transparent; color: var(--text-sub); margin-top: 6px;" onclick="closeModal('modalDeposit')">Отмена</button>
@@ -603,10 +548,9 @@
     <div class="modal-backdrop" id="modalSend">
         <div class="modal-window">
             <div class="section-title">Отправить на кошелёк</div>
-            <div style="font-size: 12px; color: var(--text-sub); margin-bottom: 10px;">Trust Wallet, Tonkeeper, Phantom и др.</div>
             <input type="text" class="form-input" placeholder="Адрес кошелька">
             <input type="number" id="sendInputVal" class="form-input" placeholder="Сумма в $">
-            <button class="btn-primary" onclick="executeSend()">Отправить средства</button>
+            <button class="btn-primary" onclick="executeSend()">Отправить</button>
             <button class="btn-primary" style="background: transparent; color: var(--text-sub); margin-top: 6px;" onclick="closeModal('modalSend')">Отмена</button>
         </div>
     </div>
@@ -614,26 +558,24 @@
     <div class="modal-backdrop" id="modalWithdraw">
         <div class="modal-window">
             <div class="section-title">Вывод средств</div>
-            <input type="text" class="form-input" placeholder="Реквизиты вывода">
+            <input type="text" class="form-input" placeholder="Реквизиты">
             <input type="number" class="form-input" placeholder="Сумма $">
-            <button class="btn-primary" onclick="alert('Запрос на вывод отправлен!'); closeModal('modalWithdraw');">Вывести</button>
+            <button class="btn-primary" onclick="alert('Запрос отправлен!'); closeModal('modalWithdraw');">Вывести</button>
             <button class="btn-primary" style="background: transparent; color: var(--text-sub); margin-top: 6px;" onclick="closeModal('modalWithdraw')">Отмена</button>
         </div>
-    </div>
-
-    <div class="modal-backdrop" id="modalExchange">
+    </div><div class="modal-backdrop" id="modalExchange">
         <div class="modal-window">
-            <div class="section-title">Универсальный обменник</div>
+            <div class="section-title">Обменник</div>
             <select class="form-input"><option>USDT -> RUB</option><option>RUB -> USDT</option><option>BTC -> USDT</option></select>
             <input type="number" class="form-input" placeholder="Сумма">
-            <button class="btn-primary" onclick="alert('Обмен успешно выполнен!'); closeModal('modalExchange');">Обменять</button>
+            <button class="btn-primary" onclick="alert('Обмен выполнен!'); closeModal('modalExchange');">Обменять</button>
             <button class="btn-primary" style="background: transparent; color: var(--text-sub); margin-top: 6px;" onclick="closeModal('modalExchange')">Отмена</button>
         </div>
     </div>
 
     <div class="modal-backdrop" id="modalQr">
         <div class="modal-window" style="text-align: center;">
-            <div class="section-title">Ваш QR-код кошелька</div>
+            <div class="section-title">QR-код</div>
             <div style="width: 180px; height: 180px; background: #fff; margin: 16px auto; padding: 10px; border-radius: 12px; display: flex; align-items: center; justify-content: center;">
                 <i class="fa-solid fa-qrcode" style="font-size: 140px; color: #000;"></i>
             </div>
@@ -643,9 +585,10 @@
 
     <div class="modal-backdrop" id="modalCreateP2P">
         <div class="modal-window">
-            <div class="section-title">Создать P2P объявление</div><input type="text" class="form-input" placeholder="Банк / Способ оплаты">
-            <input type="number" class="form-input" placeholder="Курс за 1 USDT">
-            <input type="number" class="form-input" placeholder="Объём USDT">
+            <div class="section-title">Создать P2P объявление</div>
+            <input type="text" class="form-input" placeholder="Банк">
+            <input type="number" class="form-input" placeholder="Курс">
+            <input type="number" class="form-input" placeholder="Объём">
             <button class="btn-primary" onclick="closeModal('modalCreateP2P'); alert('Опубликовано!');">Опубликовать</button>
             <button class="btn-primary" style="background: transparent; color: var(--text-sub); margin-top: 6px;" onclick="closeModal('modalCreateP2P')">Отмена</button>
         </div>
@@ -653,14 +596,13 @@
 
     <div class="modal-backdrop" id="modalReport">
         <div class="modal-window">
-            <div class="section-title" style="color: var(--accent-red);">Подать жалобу на скам</div>
+            <div class="section-title" style="color: var(--accent-red);">Жалоба</div>
             <textarea class="form-input" style="height: 90px;" placeholder="Опишите проблему..."></textarea>
-            <button class="btn-primary" style="background: var(--accent-red);" onclick="closeModal('modalReport'); alert('Жалоба передана в Раздел 7!');">Отправить</button>
+            <button class="btn-primary" style="background: var(--accent-red);" onclick="closeModal('modalReport'); alert('Отправлено!');">Отправить</button>
             <button class="btn-primary" style="background: transparent; color: var(--text-sub); margin-top: 6px;" onclick="closeModal('modalReport')">Отмена</button>
         </div>
     </div>
 
-    <!-- СКРИПТЫ ЛОГИКИ -->
     <script>
         let appState = {
             user: { name: 'Эльдар', isAdmin: true, activeSkin: 'skin-classic' },
@@ -670,21 +612,19 @@
             enteredPin: '',
             
             cardSkins: [
-                { id: 'skin-classic', name: '1) Классический синий Novapay', class: 'skin-classic', isFree: true },
-                { id: 'skin-amex-black', name: '2) Novapay AMEX Black Flora', class: 'skin-amex-black', isFree: false },
-                { id: 'skin-amex-floral', name: '3) Novapay AMEX Oil Flora', class: 'skin-amex-floral', isFree: false },
-                { id: 'skin-amex-silver', name: '4) Novapay AMEX Silver Metallic', class: 'skin-amex-silver', isFree: false },
-                { id: 'skin-onyx', name: '5) Novapay Premier Onyx Knight', class: 'skin-onyx', isFree: false },
-                { id: 'skin-lv-blue', name: '6) Novapay Louis Vuitton Pool', class: 'skin-lv-blue', isFree: false },
-                { id: 'skin-red-edition', name: '7) Novapay Red Luxury Edition', class: 'skin-red-edition', isFree: false }
+                { id: 'skin-classic', name: '1) Классический синий', class: 'skin-classic', isFree: true },
+                { id: 'skin-amex-black', name: '2) AMEX Black', class: 'skin-amex-black', isFree: false },
+                { id: 'skin-amex-floral', name: '3) AMEX Oil', class: 'skin-amex-floral', isFree: false },
+                { id: 'skin-amex-silver', name: '4) AMEX Silver', class: 'skin-amex-silver', isFree: false },
+                { id: 'skin-onyx', name: '5) Onyx Knight', class: 'skin-onyx', isFree: false },
+                { id: 'skin-lv-blue', name: '6) Louis Vuitton', class: 'skin-lv-blue', isFree: false },
+                { id: 'skin-red-edition', name: '7) Red Luxury', class: 'skin-red-edition', isFree: false }
             ],
 
             usersList: [
                 { id: 1, name: 'Эльдар (Владелец)', status: 'Active', unlockedSkins: ['ALL'] },
                 { id: 2, name: 'Alex_Crypto', status: 'Active', unlockedSkins: ['skin-classic'] }
-            ],
-
-            assets: [
+            ],assets: [
                 { name: 'Bitcoin', symbol: 'BTC', price: 77464.70, change: 0.86, amount: 0.012, color: '#f7931a', icon: 'fa-bitcoin' },
                 { name: 'Ethereum', symbol: 'ETH', price: 2251.00, change: 0.78, amount: 0.15, color: '#627eea', icon: 'fa-ethereum' },
                 { name: 'Tether USDT', symbol: 'USDT', price: 1.00, change: 0.06, amount: 500.0, color: '#26a17b', icon: 'fa-dollar-sign' }
@@ -706,7 +646,9 @@
         }
 
         function renderSkinsSettingsList() {
-            const container = document.getElementById('cardSkinsListContainer');container.innerHTML = '';
+            const container = document.getElementById('cardSkinsListContainer');
+            if(!container) return;
+            container.innerHTML = '';
             appState.cardSkins.forEach(skin => {
                 const isUnlocked = appState.user.isAdmin || skin.isFree;
                 const isCurrent = appState.user.activeSkin === skin.id;
@@ -722,26 +664,23 @@
         }
 
         function selectSkin(skinId, isUnlocked) {
-            if (!isUnlocked) return alert('Дизайн заблокирован. Обратитесь к администратору для покупки!');
+            if (!isUnlocked) return alert('Дизайн заблокирован.');
             appState.user.activeSkin = skinId;
-            document.getElementById('mainCardSkin').className = `crypto-card ${skinId}`;
+            document.getElementById('mainCardSkin').className = crypto-card ${skinId};
             renderSkinsSettingsList();
         }
 
         function renderAdminPanel() {
-            document.getElementById('adminCommissionTotal').innerText = `$${appState.adminCommissions.toFixed(2)}`;
+            const adminTotal = document.getElementById('adminCommissionTotal');
+            if(adminTotal) adminTotal.innerText = $${appState.adminCommissions.toFixed(2)};
             const skinManager = document.getElementById('adminSkinManagerContainer');
+            if(!skinManager) return;
             skinManager.innerHTML = '';
             appState.usersList.filter(u => u.id !== 1).forEach(u => {
-                let buttonsHtml = '';
-                appState.cardSkins.forEach(s => {
-                    buttonsHtml += `<button class="btn-primary" style="width:auto; padding:4px 8px; font-size:10px;" onclick="alert('Права выданы!')">${s.name.split(' ')[0]}</button>`;
-                });
-                skinManager.innerHTML += `
+                skinManager.innerHTML += 
                     <div style="background:var(--card-bg); border:1px solid var(--border-color); padding:10px; border-radius:10px;">
                         <div style="font-weight:700; margin-bottom:6px;">${u.name}</div>
-                        <div style="display:flex; gap:6px; flex-wrap:wrap;">${buttonsHtml}</div>
-                    </div>`;
+                    </div>;
             });
         }
 
@@ -749,18 +688,17 @@
             const name = document.getElementById('regFirstName').value;
             if(!name) return;
             appState.user.name = name;
-            document.getElementById('userProfileTitle').innerText = `${name} • Novapay`;
+            document.getElementById('userProfileTitle').innerText = ${name} • Novapay;
             document.getElementById('authStep1').style.display = 'none';
             document.getElementById('authStep2').style.display = 'block';
         }
 
         function pressPin(n) {
             appState.enteredPin += n;
-            if(appState.enteredPin.length === 5) {
-                setTimeout(() => {
+            if(appState.enteredPin.length === 5) {setTimeout(() => {
                     document.getElementById('authStep2').style.display = 'none';
                     document.getElementById('authStep3').style.display = 'block';
-                    document.getElementById('seedDisplay').innerHTML = `
+                    document.getElementById('seedDisplay').innerHTML = 
                         <div class="seed-word"><span>1.</span>alpha</div>
                         <div class="seed-word"><span>2.</span>bravo</div>
                         <div class="seed-word"><span>3.</span>orbit</div>
@@ -768,7 +706,8 @@
                         <div class="seed-word"><span>5.</span>cipher</div>
                         <div class="seed-word"><span>6.</span>pinnacle</div>
                         <div class="seed-word"><span>7.</span>shadow</div>
-                        <div class="seed-word"><span>8.</span>matrix</div><div class="seed-word"><span>9.</span>crystal</div>
+                        <div class="seed-word"><span>8.</span>matrix</div>
+                        <div class="seed-word"><span>9.</span>crystal</div>
                         <div class="seed-word"><span>10.</span>vector</div>
                         <div class="seed-word"><span>11.</span>pulse</div>
                         <div class="seed-word"><span>12.</span>fusion</div>;
@@ -788,6 +727,7 @@
 
         function renderAssets() {
             const list = document.getElementById('assetList');
+            if(!list) return;
             list.innerHTML = '';
             appState.assets.forEach(a => {
                 list.innerHTML += 
@@ -809,7 +749,7 @@
             appState.adminCommissions += comm;
             document.getElementById('displayBalance').innerText = $${appState.balance.toFixed(2)};
             closeModal('modalDeposit');
-            alert(Успешно пополнено! Комиссия админа (0.5%): $${comm.toFixed(2)});
+            alert(Пополнено! Комиссия: $${comm.toFixed(2)});
         }
 
         function executeSend() {
@@ -820,29 +760,34 @@
             appState.adminCommissions += comm;
             document.getElementById('displayBalance').innerText = $${appState.balance.toFixed(2)};
             closeModal('modalSend');
-            alert(Успешно отправлено! Комиссия админа (1.0%): $${comm.toFixed(2)});
+            alert(Отправлено! Комиссия: $${comm.toFixed(2)});
         }
 
         function renderTradingView() {
-            const box = document.getElementById('tvChartBars');
+            const box = document.getElementById('tvChartBars');if(!box) return;
             box.innerHTML = '';
             for(let i=0; i<20; i++) {
                 box.innerHTML += <div class="tv-bar" style="height:${Math.floor(Math.random()*70)+20}%"></div>;
             }
-            document.getElementById('heatmapGrid').innerHTML = 
-                <div class="heatmap-cell big" style="background:#27ae60"><span>BTC</span><span>+0.86%</span></div>
-                <div class="heatmap-cell big" style="background:#27ae60"><span>ETH</span><span>+1.34%</span></div>;
+            const heatmap = document.getElementById('heatmapGrid');
+            if(heatmap) {
+                heatmap.innerHTML = 
+                    <div class="heatmap-cell big" style="background:#27ae60"><span>BTC</span><span>+0.86%</span></div>
+                    <div class="heatmap-cell big" style="background:#27ae60"><span>ETH</span><span>+1.34%</span></div>;
+            }
         }
 
         function startYield() {
             let y = 14.829;
             setInterval(() => {
                 y += 0.00001;
-                document.getElementById('realtimeYield').innerText = `${y.toFixed(6)}`;
+                const el = document.getElementById('realtimeYield');
+                if(el) el.innerText = $${y.toFixed(6)};
             }, 1000);
         }
 
-        function copyRefLink() { navigator.clipboard.writeText('https://t.me/NovapayBot?start=ref_eldar'); alert('Реферальная ссылка скопирована!'); }function openSupportChat() { window.open('https://t.me/Potereavhiirazum', '_blank'); }
+        function copyRefLink() { navigator.clipboard.writeText('https://t.me/NovapayBot?start=ref_eldar'); alert('Ссылка скопирована!'); }
+        function openSupportChat() { window.open('https://t.me/Potereavhiirazum', '_blank'); }
         function openModal(id) { document.getElementById(id).classList.add('active'); }
         function closeModal(id) { document.getElementById(id).classList.remove('active'); }
     </script>
