@@ -37,53 +37,41 @@
             height: 100vh;
             overflow: hidden;
         }
-
-        /* ==========================================================
-           ДИЗАЙНЫ КАРТ С ФОТОГРАФИЯМИ И ССЫЛКАМИ
-           Сюда ты можешь вставить прямые ссылки на свои загруженные картинки
-           ========================================================== */
         
         .skin-classic { 
             background: linear-gradient(135deg, #0052D4, #4364F7, #6FB1FC); 
         }
         
-        /* 1. AMEX Black Flora */
         .skin-amex-black { 
             background-image: url('blacknvp.jpg'); 
             background-size: cover; background-position: center; 
         }
 
-        /* 2. AMEX Oil Painting Flora */
         .skin-amex-floral { 
             background-image: url('flovnvp.jpg'); 
             background-size: cover; background-position: center; 
         }
 
-        /* 3. AMEX Silver Metallic */
         .skin-amex-silver { 
             background-image: url('graynvp.jpg'); 
             background-size: cover; background-position: center; 
         }
 
-        /* 4. Premier Onyx Card */
         .skin-onyx { 
             background-image: url('onvp.jpg'); 
             background-size: cover; background-position: center; 
         }
 
-        /* 5. Louis Vuitton Pool Blue */
         .skin-lv-blue { 
             background-image: url('oceanvp.jpg'); 
             background-size: cover; background-position: center; 
         }
 
-        /* 6. Red Luxury Edition */
         .skin-red-edition { 
             background-image: url('rednvp.jpg'); 
             background-size: cover; background-position: center; 
         }
 
-        /* --- АВТОРИЗАЦИЯ И ОНБОРДИНГ --- */
         .auth-overlay {
             position: fixed;
             top: 0; left: 0; right: 0; bottom: 0;
@@ -108,7 +96,9 @@
         }
 
         .auth-title { font-size: 22px; font-weight: 700; margin-bottom: 12px; }
-        .auth-desc { font-size: 14px; color: var(--text-sub); margin-bottom: 20px; line-height: 1.4; }.form-input {
+        .auth-desc { font-size: 14px; color: var(--text-sub); margin-bottom: 20px; line-height: 1.4; }
+        
+        .form-input {
             width: 100%;
             padding: 14px;
             background: var(--bg-color);
@@ -132,9 +122,7 @@
             cursor: pointer;
             transition: transform 0.1s, opacity 0.2s;
         }
-        .btn-primary:active { transform: scale(0.98); opacity: 0.9; }
-
-        .pin-dots { display: flex; justify-content: center; gap: 12px; margin: 20px 0; }
+        .btn-primary:active { transform: scale(0.98); opacity: 0.9; }.pin-dots { display: flex; justify-content: center; gap: 12px; margin: 20px 0; }
         .pin-dot { width: 14px; height: 14px; border-radius: 50%; border: 2px solid var(--text-sub); }
         .pin-dot.filled { background: var(--accent-blue); border-color: var(--accent-blue); }
 
@@ -167,7 +155,6 @@
         }
         .seed-word span { color: var(--accent-blue); font-weight: 700; margin-right: 4px; }
 
-        /* --- ХЕДЕР --- */
         .app-header {
             padding: 12px 16px;
             display: flex;
@@ -194,7 +181,6 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
-        /* --- ВИЗУАЛ КАРТЫ И БАЛАНСА ПОД НЕЙ --- */
         .crypto-card-container {
             margin-bottom: 14px;
         }
@@ -230,7 +216,9 @@
             display: flex; 
             gap: 10px; 
             text-shadow: 0 1px 2px rgba(0,0,0,0.8); 
-        }.balance-container-below {
+        }
+        
+        .balance-container-below {
             background: var(--card-bg);
             border: 1px solid var(--border-color);
             border-radius: 16px;
@@ -241,14 +229,12 @@
             gap: 4px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.2);
         }
-        .balance-title-sub { font-size: 13px; color: var(--text-sub); }
+        .balance-title-sub { font-size: 13px; color: var(--text-sub);}
         .balance-amount-big { font-size: 30px; font-weight: 800; letter-spacing: -0.5px; }
 
-        /* БЫСТРЫЕ ДЕЙСТВИЯ */
         .quick-actions { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 24px; }
         .action-btn {
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
+            background: var(--card-bg);border: 1px solid var(--border-color);
             border-radius: 14px;
             padding: 12px 6px;
             display: flex;
@@ -284,7 +270,6 @@
         .up { color: var(--accent-green); }
         .down { color: var(--accent-red); }
 
-        /* ТОРГОВЛЯ И ГРАФИК */
         .category-chips { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 8px; margin-bottom: 14px; }
         .chip {
             background: var(--card-bg);
@@ -319,18 +304,16 @@
         }
         .tv-bar { flex: 1; background: var(--accent-green); border-radius: 2px 2px 0 0; transition: height 0.3s; }
 
-        .heatmap-grid { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 65px; gap: 6px; margin-bottom: 20px; }.heatmap-cell { border-radius: 10px; padding: 8px; display: flex; flex-direction: column; justify-content: space-between; color: #fff; font-weight: 700; font-size: 12px; }
+        .heatmap-grid { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 65px; gap: 6px; margin-bottom: 20px; }
+        .heatmap-cell { border-radius: 10px; padding: 8px; display: flex; flex-direction: column; justify-content: space-between; color: #fff; font-weight: 700; font-size: 12px; }
         .heatmap-cell.big { grid-column: span 2; grid-row: span 2; font-size: 15px; }
 
-        /* ДОХОД */
         .income-hero { background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 20px; padding: 24px; text-align: center; margin-bottom: 20px; }
         .income-hero i { font-size: 54px; color: #f2c94c; margin-bottom: 10px; }
         .realtime-yield { font-size: 28px; font-weight: 800; color: var(--accent-green); margin: 6px 0; }
-        .staking-cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
-        .staking-item { background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 14px; padding: 14px; position: relative; overflow: hidden; }
+        .staking-cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }.staking-item { background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 14px; padding: 14px; position: relative; overflow: hidden; }
         .staking-badge { position: absolute; top: 0; right: 0; background: var(--accent-blue); color: #fff; font-size: 9px; font-weight: 800; padding: 3px 8px; border-bottom-left-radius: 8px; }
 
-        /* P2P */
         .p2p-order-card { background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 14px; padding: 14px; margin-bottom: 10px; }
         .chat-box {
             height: 220px;
@@ -348,7 +331,6 @@
         .msg.in { background: var(--card-bg); align-self: flex-start; }
         .msg.out { background: var(--accent-blue); color: #fff; align-self: flex-end; }
 
-        /* НАСТРОЙКИ И ДИЗАЙНЫ КАРТ */
         .settings-group { background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 16px; margin-bottom: 16px; overflow: hidden; }
         .settings-row { padding: 14px 16px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--border-color); cursor: pointer; font-size: 14px; }
         .settings-row:last-child { border-bottom: none; }
@@ -364,7 +346,6 @@
         .skin-badge-unlocked { background: var(--accent-green); color: #fff; font-size: 10px; font-weight: 700; padding: 2px 6px; border-radius: 6px; }
         .skin-badge-locked { background: var(--accent-red); color: #fff; font-size: 10px; font-weight: 700; padding: 2px 6px; border-radius: 6px; }
 
-        /* НИЖНЯЯ НАВИГАЦИЯ */
         .bottom-nav {
             position: fixed;
             bottom: 0; left: 0; right: 0;
@@ -379,7 +360,6 @@
         .nav-item i { font-size: 18px; }
         .nav-item.active { color: var(--accent-blue); }
 
-        /* МОДАЛЬНЫЕ ОКНА */
         .modal-backdrop {
             position: fixed;
             top: 0; left: 0; right: 0; bottom: 0;
@@ -387,7 +367,8 @@
             z-index: 900;
             display: none;
             align-items: center;
-            justify-content: center;padding: 20px;
+            justify-content: center;
+            padding: 20px;
         }
         .modal-backdrop.active { display: flex; }
         .modal-window {
@@ -412,9 +393,7 @@
             <input type="text" id="regFirstName" class="form-input" placeholder="Имя (Эльдар)">
             <input type="text" id="regLastName" class="form-input" placeholder="Фамилия">
             <button class="btn-primary" onclick="goToStep2()">Создать кошелёк</button>
-        </div>
-
-        <div id="authStep2" class="auth-card" style="display: none;">
+        </div><div id="authStep2" class="auth-card" style="display: none;">
             <div class="auth-title">Безопасность (PIN)</div>
             <div class="auth-desc">Придумайте 5-значный PIN-код</div>
             <div class="pin-dots" id="pinDots">
@@ -459,10 +438,10 @@
         </div>
     </div>
 
-    <!-- ОСНОВНОЙ КОНТЕНТ (7 ВКЛАДОК) -->
-    <div class="main-content"><!-- 1. КОШЕЛЁК -->
+    <!-- ОСНОВНОЙ КОНТЕНТ -->
+    <div class="main-content">
+        <!-- 1. КОШЕЛЁК -->
         <div id="tab1" class="tab-pane active">
-            <!-- Карта -->
             <div class="crypto-card-container">
                 <div class="crypto-card skin-classic" id="mainCardSkin">
                     <div class="card-brand">Novapay</div>
@@ -473,16 +452,13 @@
                 </div>
             </div>
 
-            <!-- Баланс под картой -->
             <div class="balance-container-below">
                 <div class="balance-title-sub">Общий баланс активов</div>
                 <div class="balance-amount-big" id="displayBalance">$1,450.00</div>
             </div>
 
-            <!-- Быстрые действия -->
             <div class="quick-actions">
-                <div class="action-btn" onclick="openModal('modalDeposit')"><i class="fa-solid fa-circle-plus"></i><span>Пополнить</span></div>
-                <div class="action-btn" onclick="openModal('modalSend')"><i class="fa-solid fa-paper-plane"></i><span>Отправить</span></div>
+                <div class="action-btn" onclick="openModal('modalDeposit')"><i class="fa-solid fa-circle-plus"></i><span>Пополнить</span></div><div class="action-btn" onclick="openModal('modalSend')"><i class="fa-solid fa-paper-plane"></i><span>Отправить</span></div>
                 <div class="action-btn" onclick="openModal('modalWithdraw')"><i class="fa-solid fa-arrow-up-right-from-square"></i><span>Вывести</span></div>
                 <div class="action-btn" onclick="openModal('modalExchange')"><i class="fa-solid fa-right-left"></i><span>Обменять</span></div>
             </div>
@@ -530,7 +506,8 @@
 
             <div class="section-title">Доступные пулы доходности</div>
             <div class="staking-cards">
-                <div class="staking-item"><div class="staking-badge">BONUS</div><div style="font-weight: 700;">MON</div><div style="font-size: 18px; font-weight: 800; color: var(--accent-green); margin: 6px 0;">13.63%</div><div style="font-size: 11px; color: var(--text-sub);">годовых</div></div><div class="staking-item"><div class="staking-badge">BONUS</div><div style="font-weight: 700;">GRAM</div><div style="font-size: 18px; font-weight: 800; color: var(--accent-green); margin: 6px 0;">13.29%</div><div style="font-size: 11px; color: var(--text-sub);">годовых</div></div>
+                <div class="staking-item"><div class="staking-badge">BONUS</div><div style="font-weight: 700;">MON</div><div style="font-size: 18px; font-weight: 800; color: var(--accent-green); margin: 6px 0;">13.63%</div><div style="font-size: 11px; color: var(--text-sub);">годовых</div></div>
+                <div class="staking-item"><div class="staking-badge">BONUS</div><div style="font-weight: 700;">GRAM</div><div style="font-size: 18px; font-weight: 800; color: var(--accent-green); margin: 6px 0;">13.29%</div><div style="font-size: 11px; color: var(--text-sub);">годовых</div></div>
             </div>
         </div>
 
@@ -543,11 +520,10 @@
             <div id="p2pOrdersContainer"></div>
         </div>
 
-        <!-- 5. СДЕЛКИ P2P -->
-        <div id="tab5" class="tab-pane">
+        <!-- 5. СДЕЛКИ P2P --><div id="tab5" class="tab-pane">
             <div class="section-title">Активная сделка #9412 (Escrow)</div>
             <div style="background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 14px; padding: 12px; margin-bottom: 12px; font-size: 13px;">
-                <div>Покупка: <b>100 USDT</b> у продавца <b>CryptoKing</b></div>
+                <div>Покупка: <b>100USDT</b> у продавца <b>CryptoKing</b></div>
                 <div style="color: var(--accent-blue); margin-top: 4px;">Статус: Криптовалюта заморожена в Escrow</div>
             </div>
 
@@ -594,21 +570,21 @@
             </div>
 
             <div class="section-title">Выдача и управление дизайном карт</div>
-            <div id="adminSkinManagerContainer" style="display: flex; flex-direction: column; gap: 8px; margin-bottom: 20px;"></div><div class="section-title">Список пользователей</div>
+            <div id="adminSkinManagerContainer" style="display: flex; flex-direction: column; gap: 8px; margin-bottom: 20px;"></div>
+            
+            <div class="section-title">Список пользователей</div>
             <div id="adminUsersList" style="display: flex; flex-direction: column; gap: 8px; margin-bottom: 20px;"></div>
 
             <div class="section-title" style="color: var(--accent-red);">Поступившие жалобы</div>
             <div id="adminReportsContainer"></div>
         </div>
-
     </div>
 
     <!-- НИЖНЯЯ НАВИГАЦИЯ -->
     <div class="bottom-nav">
         <div class="nav-item active" onclick="switchTab(1)"><i class="fa-solid fa-wallet"></i><span>Кошелёк</span></div>
         <div class="nav-item" onclick="switchTab(2)"><i class="fa-solid fa-chart-line"></i><span>Торговля</span></div>
-        <div class="nav-item" onclick="switchTab(3)"><i class="fa-solid fa-sack-dollar"></i><span>Доход</span></div>
-        <div class="nav-item" onclick="switchTab(4)"><i class="fa-solid fa-right-left"></i><span>P2P</span></div>
+        <div class="nav-item" onclick="switchTab(3)"><i class="fa-solid fa-sack-dollar"></i><span>Доход</span></div><div class="nav-item" onclick="switchTab(4)"><i class="fa-solid fa-right-left"></i><span>P2P</span></div>
         <div class="nav-item" onclick="switchTab(5)"><i class="fa-solid fa-comments"></i><span>Сделки</span></div>
         <div class="nav-item" onclick="switchTab(6)"><i class="fa-solid fa-gear"></i><span>Настройки</span></div>
     </div>
@@ -617,7 +593,7 @@
     <div class="modal-backdrop" id="modalDeposit">
         <div class="modal-window">
             <div class="section-title">Пополнить баланс</div>
-            <div style="font-size: 12px; color: var(--text-sub); margin-bottom: 10px;">Комиссия 0.5% поступает администратору</div>
+            <div style="font-size: 12px; color:var(--text-sub); margin-bottom: 10px;">Комиссия 0.5% поступает администратору</div>
             <input type="number" id="depositInputVal" class="form-input" placeholder="Сумма в $">
             <button class="btn-primary" onclick="executeDeposit()">Пополнить</button>
             <button class="btn-primary" style="background: transparent; color: var(--text-sub); margin-top: 6px;" onclick="closeModal('modalDeposit')">Отмена</button>
@@ -653,7 +629,9 @@
             <button class="btn-primary" onclick="alert('Обмен успешно выполнен!'); closeModal('modalExchange');">Обменять</button>
             <button class="btn-primary" style="background: transparent; color: var(--text-sub); margin-top: 6px;" onclick="closeModal('modalExchange')">Отмена</button>
         </div>
-    </div><div class="modal-backdrop" id="modalQr">
+    </div>
+
+    <div class="modal-backdrop" id="modalQr">
         <div class="modal-window" style="text-align: center;">
             <div class="section-title">Ваш QR-код кошелька</div>
             <div style="width: 180px; height: 180px; background: #fff; margin: 16px auto; padding: 10px; border-radius: 12px; display: flex; align-items: center; justify-content: center;">
@@ -665,8 +643,7 @@
 
     <div class="modal-backdrop" id="modalCreateP2P">
         <div class="modal-window">
-            <div class="section-title">Создать P2P объявление</div>
-            <input type="text" class="form-input" placeholder="Банк / Способ оплаты">
+            <div class="section-title">Создать P2P объявление</div><input type="text" class="form-input" placeholder="Банк / Способ оплаты">
             <input type="number" class="form-input" placeholder="Курс за 1 USDT">
             <input type="number" class="form-input" placeholder="Объём USDT">
             <button class="btn-primary" onclick="closeModal('modalCreateP2P'); alert('Опубликовано!');">Опубликовать</button>
@@ -720,15 +697,16 @@
             renderSkinsSettingsList();
             renderAdminPanel();
             startYield();
-        });function switchTab(index) {
+        });
+
+        function switchTab(index) {
             document.querySelectorAll('.tab-pane').forEach((p, idx) => p.classList.toggle('active', idx === (index - 1)));
             document.querySelectorAll('.nav-item').forEach((n, idx) => n.classList.toggle('active', idx === (index - 1)));
             if(index === 6 || index === 7) { renderSkinsSettingsList(); renderAdminPanel(); }
         }
 
         function renderSkinsSettingsList() {
-            const container = document.getElementById('cardSkinsListContainer');
-            container.innerHTML = '';
+            const container = document.getElementById('cardSkinsListContainer');container.innerHTML = '';
             appState.cardSkins.forEach(skin => {
                 const isUnlocked = appState.user.isAdmin || skin.isFree;
                 const isCurrent = appState.user.activeSkin === skin.id;
@@ -746,22 +724,24 @@
         function selectSkin(skinId, isUnlocked) {
             if (!isUnlocked) return alert('Дизайн заблокирован. Обратитесь к администратору для покупки!');
             appState.user.activeSkin = skinId;
-            document.getElementById('mainCardSkin').className = crypto-card ${skinId};
+            document.getElementById('mainCardSkin').className = `crypto-card ${skinId}`;
             renderSkinsSettingsList();
         }
 
         function renderAdminPanel() {
-            document.getElementById('adminCommissionTotal').innerText = $${appState.adminCommissions.toFixed(2)};
+            document.getElementById('adminCommissionTotal').innerText = `$${appState.adminCommissions.toFixed(2)}`;
             const skinManager = document.getElementById('adminSkinManagerContainer');
             skinManager.innerHTML = '';
             appState.usersList.filter(u => u.id !== 1).forEach(u => {
-                skinManager.innerHTML += 
+                let buttonsHtml = '';
+                appState.cardSkins.forEach(s => {
+                    buttonsHtml += `<button class="btn-primary" style="width:auto; padding:4px 8px; font-size:10px;" onclick="alert('Права выданы!')">${s.name.split(' ')[0]}</button>`;
+                });
+                skinManager.innerHTML += `
                     <div style="background:var(--card-bg); border:1px solid var(--border-color); padding:10px; border-radius:10px;">
                         <div style="font-weight:700; margin-bottom:6px;">${u.name}</div>
-                        <div style="display:flex; gap:6px; flex-wrap:wrap;">
-                            ${appState.cardSkins.map(s => <button class="btn-primary" style="width:auto; padding:4px 8px; font-size:10px;" onclick="alert('Права выданы!')">${s.name.split(' ')[0]}</button>).join('')}
-                        </div>
-                    </div>;
+                        <div style="display:flex; gap:6px; flex-wrap:wrap;">${buttonsHtml}</div>
+                    </div>`;
             });
         }
 
@@ -769,19 +749,33 @@
             const name = document.getElementById('regFirstName').value;
             if(!name) return;
             appState.user.name = name;
-            document.getElementById('userProfileTitle').innerText = ${name} • Novapay;
+            document.getElementById('userProfileTitle').innerText = `${name} • Novapay`;
             document.getElementById('authStep1').style.display = 'none';
             document.getElementById('authStep2').style.display = 'block';
         }
+
         function pressPin(n) {
             appState.enteredPin += n;
             if(appState.enteredPin.length === 5) {
-                setTimeout(()=> {
+                setTimeout(() => {
                     document.getElementById('authStep2').style.display = 'none';
                     document.getElementById('authStep3').style.display = 'block';
-                    document.getElementById('seedDisplay').innerHTML = <div>1. alpha</div><div>2. bravo</div><div>3. orbit</div><div>4. quantum</div><div>5. cipher</div><div>6. pinnacle</div><div>7. shadow</div><div>8. matrix</div><div>9. crystal</div><div>10. vector</div><div>11. pulse</div><div>12. fusion</div>;}, 300);
+                    document.getElementById('seedDisplay').innerHTML = `
+                        <div class="seed-word"><span>1.</span>alpha</div>
+                        <div class="seed-word"><span>2.</span>bravo</div>
+                        <div class="seed-word"><span>3.</span>orbit</div>
+                        <div class="seed-word"><span>4.</span>quantum</div>
+                        <div class="seed-word"><span>5.</span>cipher</div>
+                        <div class="seed-word"><span>6.</span>pinnacle</div>
+                        <div class="seed-word"><span>7.</span>shadow</div>
+                        <div class="seed-word"><span>8.</span>matrix</div><div class="seed-word"><span>9.</span>crystal</div>
+                        <div class="seed-word"><span>10.</span>vector</div>
+                        <div class="seed-word"><span>11.</span>pulse</div>
+                        <div class="seed-word"><span>12.</span>fusion</div>;
+                }, 300);
             }
         }
+
         function clearPin() { appState.enteredPin = ''; }
         function simulateBiometric() { pressPin('1'); pressPin('2'); pressPin('3'); pressPin('4'); pressPin('5'); }
         function goToStep4() { document.getElementById('authStep3').style.display = 'none'; document.getElementById('authStep4').style.display = 'block'; }
@@ -796,7 +790,14 @@
             const list = document.getElementById('assetList');
             list.innerHTML = '';
             appState.assets.forEach(a => {
-                list.innerHTML += <div class="asset-item"><div class="asset-info"><div class="asset-icon" style="background:${a.color}"><i class="fa-brands ${a.icon}"></i></div><div class="asset-names"><span class="asset-symbol">${a.name}</span><span class="asset-sub">${a.amount} ${a.symbol}</span></div></div><div class="asset-values"><div class="asset-price">$${(a.price*a.amount).toFixed(2)}</div></div></div>;
+                list.innerHTML += 
+                    <div class="asset-item">
+                        <div class="asset-info">
+                            <div class="asset-icon" style="background:${a.color}"><i class="fa-brands ${a.icon}"></i></div>
+                            <div class="asset-names"><span class="asset-symbol">${a.name}</span><span class="asset-sub">${a.amount} ${a.symbol}</span></div>
+                        </div>
+                        <div class="asset-values"><div class="asset-price">$${(a.price * a.amount).toFixed(2)}</div></div>
+                    </div>;
             });
         }
 
@@ -825,17 +826,23 @@
         function renderTradingView() {
             const box = document.getElementById('tvChartBars');
             box.innerHTML = '';
-            for(let i=0; i<20; i++) box.innerHTML += <div class="tv-bar" style="height:${Math.floor(Math.random()*70)+20}%"></div>;
-            document.getElementById('heatmapGrid').innerHTML = <div class="heatmap-cell big" style="background:#27ae60"><span>BTC</span><span>+0.86%</span></div><div class="heatmap-cell big" style="background:#27ae60"><span>ETH</span><span>+1.34%</span></div>;
+            for(let i=0; i<20; i++) {
+                box.innerHTML += <div class="tv-bar" style="height:${Math.floor(Math.random()*70)+20}%"></div>;
+            }
+            document.getElementById('heatmapGrid').innerHTML = 
+                <div class="heatmap-cell big" style="background:#27ae60"><span>BTC</span><span>+0.86%</span></div>
+                <div class="heatmap-cell big" style="background:#27ae60"><span>ETH</span><span>+1.34%</span></div>;
         }
 
         function startYield() {
             let y = 14.829;
-            setInterval(() => { y += 0.00001; document.getElementById('realtimeYield').innerText = $${y.toFixed(6)}; }, 1000);
+            setInterval(() => {
+                y += 0.00001;
+                document.getElementById('realtimeYield').innerText = `${y.toFixed(6)}`;
+            }, 1000);
         }
 
-        function copyRefLink() { navigator.clipboard.writeText('https://t.me/NovapayBot?start=ref_eldar'); alert('Реферальная ссылка скопирована!'); }
-        function openSupportChat() { window.open('https://t.me/Potereavhiirazum', '_blank'); }
+        function copyRefLink() { navigator.clipboard.writeText('https://t.me/NovapayBot?start=ref_eldar'); alert('Реферальная ссылка скопирована!'); }function openSupportChat() { window.open('https://t.me/Potereavhiirazum', '_blank'); }
         function openModal(id) { document.getElementById(id).classList.add('active'); }
         function closeModal(id) { document.getElementById(id).classList.remove('active'); }
     </script>
